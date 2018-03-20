@@ -1,18 +1,201 @@
 /*Global*/
 * {
     box-sizing: border-box;
-}
-/*Mobile*/
-@media (max-width: 767px){
-    
+    margin: 0;
 }
 
-/*Tablet*/
-@media (min-width: 768px) and (max-width: 1023px){
-    
+/* Background */
+#screensaver {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-/*Desktop*/
-@media (min-width: 1024px) {
+#welcome {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5em;
+    font-family: 'Cabin Sketch', cursive;
+    margin-top: 30%;
+}
+
+#intro-touch {
+    width: 20%;
+    margin: 10% 0% 0% 40%;
+}
+
+#bg {
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    z-index: -1;
+}
+
+#bg-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    z-index: 2;
+}
+
+/* Sign of Touch rotation animation */
+.rotation {
+    animation: rotation 15s infinite linear; 
+}
+
+@keyframes rotation {
+    from {
+        transform:rotate(0deg);
+    }
     
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* Posters on startscreen */
+#flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.flex {
+    width: 25.5%;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+.ceres-gylden {
+    margin-left: 8%;
+}
+
+.toersleff {
+    margin-left: 3.6%;
+}
+
+/* Ceres Beer Poster */
+#ceres-touch {
+    display: none;
+    position: relative;
+}
+
+/* Ceres Gylden Poster */
+#gylden-touch {
+    display: none;
+    position: relative;
+}
+
+.gylden-a {
+    position: absolute;
+    width: 27%;
+    margin-top: -101%;
+    margin-left: 22%;
+}
+
+.gylden-b {
+    position: absolute;
+    width: 20%;
+    margin-top: -35%;
+    margin-left: 33.5%;
+}
+
+.gylden-c {
+    position: absolute;
+    width: 12%;
+    margin-top: -52%;
+    margin-left: 67%;
+}
+
+/* Tørsleff Poster */
+#toersleff-touch {
+    display: none;
+    position: relative;
+}
+
+.toersleff-a {
+    position: absolute;
+    width: 15%;
+    margin-top: -108%;
+    margin-left: 23%;
+}
+
+.toersleff-b {
+    position: absolute;
+    width: 25%;
+    margin-top: -54%;
+    margin-left: 61.5%;
+}
+
+.toersleff-c {
+    position: absolute;
+    width: 13%;
+    margin-top: -49%;
+    margin-left: 26%;
+}
+
+.toersleff-d {
+    position: absolute;
+    width: 10%;
+    margin-top: -22%;
+    margin-left: 15%;
+}
+
+/* Close button */
+.close {
+    display: none;
+    position: absolute;
+    margin-top: -115%;
+    margin-left: 1%;
+}
+
+/* Text Box */
+.frame {
+    display: none;
+    position: absolute;
+    width: 70%;
+    margin-top: -107%;
+    margin-left: 15%;
+    z-index: 2;
+}
+
+.txtbox {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 625px;
+    margin-top: -95%;
+    margin-left: 25%;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    overflow: scroll;
+}
+
+.txtbox h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 100;
+    font-size: 3.5em;
+    margin: 15% 0% 5% 0%;
+}
+
+.txtbox p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.7em;
+}
+
+.return {
+    display: none;
+    position: absolute;
+    width: 4%;
+    margin-top: -114%;
+    margin-left: 1%;
+    z-index: 2;
 }
