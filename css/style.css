@@ -88,6 +88,34 @@
     position: relative;
 }
 
+.ceres-a {
+    position: absolute;
+    width: 26%;
+    margin-top: -94.5%;
+    margin-left: 65.7%;
+}
+
+.ceres-b {
+    position: absolute;
+    width: 17%;
+    margin-top: -77%;
+    margin-left: 25%;
+}
+
+.ceres-c {
+    position: absolute;
+    width: 18.5%;
+    margin-top: -18%;
+    margin-left: 58%;
+}
+
+.ceres-d {
+    position: absolute;
+    width: 8.5%;
+    margin-top: 0.2%;
+    margin-left: 7.3%;
+}
+
 /* Ceres Gylden Poster */
 #gylden-touch {
     display: none;
@@ -183,12 +211,13 @@
     font-family: 'Cabin Sketch', cursive;
     font-weight: 100;
     font-size: 3.5em;
-    margin: 15% 0% 5% 0%;
+    margin-top: 15%;
 }
 
 .txtbox p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.7em;
+    margin-top: 10%;
 }
 
 .return {
